@@ -1,5 +1,5 @@
 package BaseDAO;
 
-public class java {
+public class daw {
 
 }
