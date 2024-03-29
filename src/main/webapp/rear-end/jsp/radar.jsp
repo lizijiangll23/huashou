@@ -1,6 +1,4 @@
-<!--
-	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=radar
--->
+
 <!DOCTYPE html>
 <html lang="en" style="height: 100%">
 <head>

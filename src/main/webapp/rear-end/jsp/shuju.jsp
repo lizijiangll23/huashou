@@ -8,6 +8,7 @@
 </head>
 <body>
 	<jsp:include page="bian.jsp"></jsp:include>
+	<div id = "lan"></div>
 </body>
 <script src="../js/ce.js"></script>
 </html>
