@@ -18,7 +18,7 @@
 
     option = {
   title: {
-    text: 'Distribution of Electricity'
+    text: 'Login Log'
   },
   tooltip: {
     trigger: 'axis',

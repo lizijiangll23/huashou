@@ -144,8 +144,8 @@ layui.use('layer', function () {
                             $('.login div').fadeOut(100);
                             $('.success').fadeIn(1000);
                             $('.success').html(data.Text);
-                            // window.location.href="paye_319/indexNav.html";
-                            // //跳转操作
+                            window.location.href="../jsp/NewFile.jsp";
+                            
 
                         } else {
                             AjaxErro(data);
