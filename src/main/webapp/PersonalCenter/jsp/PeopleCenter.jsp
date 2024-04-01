@@ -32,7 +32,7 @@
 			<div id="center">
 				<div id="c-head">
 					<!-- 当前选择位置 -->
-					<span><a href="../../mhf/html/首页.html" id="a-title">首页</a></span>
+					<span><a href="../../mhf/html/首页.jsp" id="a-title">首页</a></span>
 					<span>></span>
 					<span class="now">个人中心</span><!-- !!!通过点击获取 -->
 				</div>

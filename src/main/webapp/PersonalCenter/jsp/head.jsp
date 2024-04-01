@@ -11,9 +11,9 @@
 			<div class="topBar clearfix">
 				<div class="containerWidth">
 					<div class="leftbox">
-						<a href="../../mhf/html/首页.html">华硕官网</a>
+						<a href="../../mhf/html/首页.jsp">华硕官网</a>
 						<span>|</span>
-						<a href="../../mhf/html/首页.html">商城首页</a>
+						<a href="../../mhf/html/首页.jsp">商城首页</a>
 						<span>|</span>
 						<a href="">驱动下载</a>
 						<span>|</span>
@@ -38,7 +38,7 @@
 						</a>
 						
 						<span>|</span>
-						<a href="order/c_order.html" id="imp1">我的订单</a>
+						<a href="order/c_order.jsp" id="imp1">我的订单</a>
 						<div class="inlineBlock carts">
 							<a href="" class="minicart-text">
 								<span class="inlineBlock">
@@ -55,7 +55,7 @@
 			<div class="topModule">
 				<div class="containerWidth">
 					<div class="inlineBlock logobox">
-						<a href="../../mhf/html/首页.html" class="inlineBlock">
+						<a href="../../mhf/html/首页.jsp" class="inlineBlock">
 							<img src="../imgs/logo.png" class="logo">
 						</a>
 						<a href="" class="inlineBlock">

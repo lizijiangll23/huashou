@@ -55,7 +55,7 @@
 						</a>
 						
 						<span>|</span>
-						<a href="order/c_order.jsp" id="imp1">我的订单</a>
+					<a href="../order/c_order.jsp" id="imp1">我的订单</a>
 						<div class="inlineBlock carts">
 							<a href="" class="minicart-text">
 								<span class="inlineBlock">
