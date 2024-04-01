@@ -113,7 +113,7 @@
 					<!-- 当前选择位置 -->
 					<span><a href="../PeopleCenter.jsp" id="a-title">个人中心</a></span>
 					<span>></span>
-					<span class="now">我的活动</span><!-- !!!通过点击获取 -->
+					<span class="now">领券中心</span><!-- !!!通过点击获取 -->
 				</div>
 				<!-- 内容 -->
 				<div id="c-center">
@@ -134,9 +134,9 @@
 								<div id="my-account">
 									<h2 class="order-text2">我的账户</h2>
 									<ul class="order-menu">
-										<li><a href="#" id="myactivty" style="color: #00a8ff;">我的活动</a></li>
+										<li><a href="c_activity.jsp" id="myactivty">我的活动</a></li>
 										<li><a href="c_coupon.jsp" id="mycoupon">我的优惠券</a></li>
-										<li><a href="c_bring.jsp" id="bringcoupon">领券中心</a></li>
+										<li><a href="#" id="bringcoupon" style="color: #00a8ff;">领券中心</a></li>
 										<li><a href="c_love.jsp" id="mylove">我的收藏/到货通知</a></li>
 									</ul>
 								</div>
@@ -153,24 +153,180 @@
 						</div>
 						<!-- 右边 -->
 						<div id="center-right">
-							<!-- 我的活动 -->
-							<div id="c_activity">
-								<div id="activity_box">
-									<div id="box_top">
-										<p>我的活动</p>
-										<p class="box_txt">我的预约</p>
-										<p class="box_txt1">什么是我的预约</p>
-										<p class="box_txt2">商品预约后，在“我的预约”栏目下，您可以查看您所预约的商品，待商品开始抢购时，可以通过“立即抢购”按钮立即结算抢购 商品，我们会按付款顺序优先给您发货</p>
-									</div>
-									<div id="jilu">
-										<p>
-											总计
-											<span style="color:#e4393c;">0</span> <!-- !!!传参 -->
-											个记录
-										</p>
+							<!-- 领券中心 -->
+							<div id="c_bring">
+								<div id="bring_title">
+									<h2>领券中心</h2>
+								</div>
+								<div id="bring_box">
+									<div id="box_info">
+										<p class="bring_txt">优惠券</p>
+										<div class="brings">
+											<!-- !!!查询已有优惠券 -->
+											<div class="bring_items">
+												<div class="itme">
+													<!-- !!!表中获取 -->
+													<p class="bring_money">
+														￥
+														<span>200</span>
+													</p>
+													<div class="bring_why">
+														<p title="全场通用优惠">全场通用优惠</p>
+														<p>无门槛200元</p>
+													</div>
+													<button class="bring">
+														点击领取
+													</button>
+												</div>
+												<p class="bring_time">有效期：2024-03-01-2024-03-31</p>
+											</div>
+											<div class="bring_items">
+												<div class="itme">
+													<!-- !!!表中获取 -->
+													<p class="bring_money">
+														￥
+														<span>200</span>
+													</p>
+													<div class="bring_why">
+														<p title="全场通用优惠">全场通用优惠</p>
+														<p>无门槛200元</p>
+													</div>
+													<button class="bring">
+														点击领取
+													</button>
+												</div>
+												<p class="bring_time">有效期：2024-03-01-2024-03-31</p>
+											</div>
+											<div class="bring_items">
+												<div class="itme">
+													<!-- !!!表中获取 -->
+													<p class="bring_money">
+														￥
+														<span>200</span>
+													</p>
+													<div class="bring_why">
+														<p title="全场通用优惠">全场通用优惠</p>
+														<p>无门槛200元</p>
+													</div>
+													<button class="bring">
+														点击领取
+													</button>
+												</div>
+												<p class="bring_time">有效期：2024-03-01-2024-03-31</p>
+											</div>
+											<div class="bring_items">
+												<div class="itme">
+													<!-- !!!表中获取 -->
+													<p class="bring_money">
+														￥
+														<span>200</span>
+													</p>
+													<div class="bring_why">
+														<p title="全场通用优惠">全场通用优惠</p>
+														<p>无门槛200元</p>
+													</div>
+													<button class="bring">
+														点击领取
+													</button>
+												</div>
+												<p class="bring_time">有效期：2024-03-01-2024-03-31</p>
+											</div>
+											<div class="bring_items">
+												<div class="itme">
+													<!-- !!!表中获取 -->
+													<p class="bring_money">
+														￥
+														<span>200</span>
+													</p>
+													<div class="bring_why">
+														<p title="全场通用优惠">全场通用优惠</p>
+														<p>无门槛200元</p>
+													</div>
+													<button class="bring">
+														点击领取
+													</button>
+												</div>
+												<p class="bring_time">有效期：2024-03-01-2024-03-31</p>
+											</div>
+											<div class="bring_items">
+												<div class="itme">
+													<!-- !!!表中获取 -->
+													<p class="bring_money">
+														￥
+														<span>200</span>
+													</p>
+													<div class="bring_why">
+														<p title="全场通用优惠">全场通用优惠</p>
+														<p>无门槛200元</p>
+													</div>
+													<button class="bring">
+														点击领取
+													</button>
+												</div>
+												<p class="bring_time">有效期：2024-03-01-2024-03-31</p>
+											</div>
+											<div class="bring_items">
+												<div class="itme">
+													<!-- !!!表中获取 -->
+													<p class="bring_money">
+														￥
+														<span>200</span>
+													</p>
+													<div class="bring_why">
+														<p title="全场通用优惠">全场通用优惠</p>
+														<p>无门槛200元</p>
+													</div>
+													<button class="bring">
+														点击领取
+													</button>
+												</div>
+												<p class="bring_time">有效期：2024-03-01-2024-03-31</p>
+											</div>
+											<div class="bring_items">
+												<div class="itme">
+													<!-- !!!表中获取 -->
+													<p class="bring_money">
+														￥
+														<span>200</span>
+													</p>
+													<div class="bring_why">
+														<p title="全场通用优惠">全场通用优惠</p>
+														<p>无门槛200元</p>
+													</div>
+													<button class="bring">
+														点击领取
+													</button>
+												</div>
+												<p class="bring_time">有效期：2024-03-01-2024-03-31</p>
+											</div>
+											<div class="bring_items">
+												<div class="itme">
+													<!-- !!!表中获取 -->
+													<p class="bring_money">
+														￥
+														<span>200</span>
+													</p>
+													<div class="bring_why">
+														<p title="全场通用优惠">全场通用优惠</p>
+														<p>无门槛200元</p>
+													</div>
+													<button class="bring">
+														点击领取
+													</button>
+												</div>
+												<p class="bring_time">有效期：2024-03-01-2024-03-31</p>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
+						</div>
+						<div id="jilu">
+							<p>
+								总计
+								<span style="color:#e4393c;">9</span> <!-- !!!传参 -->
+								个记录
+							</p>
 						</div>
 					</div>
 					
@@ -370,6 +526,11 @@
 	<script src="../../js/jquery-3.5.1.min.js"></script>
 	<script src="../../js/PeopleCenter.js"></script>
 	<script>
-		
+		$(function(){
+			$(".bring").click(function(){
+				alert("领取成功!");
+			})
+		})
 	</script>
+</html>
 </html>

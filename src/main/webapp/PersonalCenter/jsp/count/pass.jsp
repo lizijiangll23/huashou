@@ -2,13 +2,14 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-<style>
-*{
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="../../css/PeopleCenter.css"/>
+	
+	<style>
+		*{
 			padding: 0px;
 			margin: 0px;
 		}
@@ -19,9 +20,11 @@
 		li{
 			list-style: none;
 		}
-</style>
-<link rel="stylesheet" href="../../css/PeopleCenter.css"/>
-<div class="header">
+		
+	</style>
+	<body>
+		<!-- 导航栏 -->
+		<div class="header">
 			<div class="topBar clearfix">
 				<div class="containerWidth">
 					<div class="leftbox">
@@ -103,140 +106,84 @@
 				</div>
 			</div>
 		</div>
-	<!-- 个人中心主体部分 -->
-		<div id="body">
-			<div id="center">
-				<div id="c-head">
-					<!-- 当前选择位置 -->
-					<span><a href="../PeopleCenter.jsp" id="a-title">个人中心</a></span>
-					<span>></span>
-					<span class="now">个人信息</span><!-- !!!通过点击获取 -->
-				</div>
-				<!-- 内容 -->
-				<div id="c-center">
-					<div id="c-box">
-						<!-- 左边 -->
-						<div id="center-left">
-							<div id="left_info">
-								<!-- 订单管理 -->
-								<div id="order-manager">
-									<h2 class="order-text1">订单管理</h2>
-									<ul class="order-menu">
-										<li><a href="../order/c_order.jsp" id="myorder">我的订单</a></li>
-										<li><a href="../order/c_salce.jsp" id="salce_mannager">售后管理</a></li>
-										<li><a href="../order/c_comment.jsp" id="comment_mannager">评价管理</a></li>
-									</ul>
-								</div>
-								<!-- 我的账户 -->
-								<div id="my-account">
-									<h2 class="order-text2">我的账户</h2>
-									<ul class="order-menu">
-										<li><a href="../count/c_activity.jsp" id="myactivty">我的活动</a></li>
-										<li><a href="../count/c_coupon.jsp" id="mycoupon">我的优惠券</a></li>
-										<li><a href="../count/c_bring.jsp" id="bringcoupon">领券中心</a></li>
-										<li><a href="../count/c_love.jsp" id="mylove">我的收藏/到货通知</a></li>
-									</ul>
-								</div>
-								<!-- 个人信息管理 -->
-								<div id="message-manager">
-									<h2 class="order-text3">个人信息管理</h2>
-									<ul class="order-menu">
-										<li><a href="#" id="message" style="color: #00a8ff">个人信息</a></li>
-										<li><a href="c_safe.jsp" id="safecenter">安全中心</a></li>
-										<li><a href="c_adderss.jsp" id="adderss">收货地址</a></li>
-									</ul>
-								</div>
-							</div>
+<!-- 个人中心主体部分 -->
+<div id="body">
+	<div id="center">
+		<div id="c-head">
+			<!-- 当前选择位置 -->
+			<span><a href="../PeopleCenter.jsp" id="a-title">个人中心</a></span>
+			<span>></span>
+			<span class="now">我的优惠券</span><!-- !!!通过点击获取 -->
+		</div>
+		<!-- 内容 -->
+		<div id="c-center">
+			<div id="c-box">
+				<!-- 左边 -->
+				<div id="center-left">
+					<div id="left_info">
+						<!-- 订单管理 -->
+						<div id="order-manager">
+							<h2 class="order-text1">订单管理</h2>
+							<ul class="order-menu">
+								<li><a href="../order/c_order.jsp" id="myorder">我的订单</a></li>
+								<li><a href="../order/c_salce.jsp" id="salce_mannager">售后管理</a></li>
+								<li><a href="../order/c_comment.jsp" id="comment_mannager">评价管理</a></li>
+							</ul>
 						</div>
-						<!-- 右边 -->
-						<div id="center-right">
-							<!-- 个人信息 -->
-							<div id="c_massage">
-								<div id="massage_title">
-									<h2>个人信息</h2>
-									<p>| 请尽量完整填写您的个人信息，方便店家与您联系。</p>
-								</div>
-								<div id="massage_info">
-									<!-- !!!表单 -->
-									<form action="" method="post" id="myCheckbox">
-										<ul>
-											<li class="form-item" style="width: 145px;margin-top: 0px;">
-												<span class="form-act" style="margin: 0;">
-													<img src="../../imgs/惠.jpg" class="img_box">
-													<div id="addpic_div" class="avator_uploader">
-														<div class="addpic">
-															<a href="" class="btn">更改头像</a>
-															<input type="hidden" name="avatar" id="avatar">
-														</div>
-														<input type="file" accept="undefined" name="file" class="file">
-													</div>
-												</span>
-											</li>
-										</ul>
-										<ul style="width: 600px;display: flex;flex-direction: column;" id="massage_ul">
-											<li class="form-item">
-												<label class="form_label">用户名:</label>
-												<span class="form-act" style="margin: 0px;">
-													<!-- !!!传值 -->
-													<input type="text" class="x_input" value="仅惠123" name="user_name" placeholder="请输入">
-												</span>
-											</li>
-											<li class="form-item">
-												<label class="form_label">性别:</label>
-												<span class="form-act">
-													<span class="form_radio">
-														<input type="radio" class="radio" name="sex" value="0" checked>
-														男
-													</span>
-													<span class="form_radio">
-														<input type="radio" class="radio" name="sex" value="1">
-														女
-													</span>
-												</span>
-											</li>
-											<li class="form-item">
-												<label class="form_label">生日:</label>
-												<span class="form-act">
-													<select name="year" id="year" class="bir-sel" ></select>年
-													<select name="month" id="month" class="bir-sel"></select>月
-													<select name="day" id="day" class="bir-sel"></select>日
-												</span>
-											</li>
-											<li class="form-item">
-												<label class="form_label">邮箱:</label>
-												<span class="form-act">
-													<input type="text" class="x_input" value="" name="email" placeholder="请输入">
-												</span>
-											</li>
-											<li class="form-item">
-												<span>
-													<input type="checkbox" id="license" data-caution="请阅读并同意使用条款等">
-													<label class="form-sub-label" style="font-size: 14px;">
-														<span>我同意</span>
-														<a href="#" class="lnklike" style="color: #00a8ff;">《服务须知》</a>
-														 及
-														<a href="#" class="lnklike"  style="color: #00a8ff;">
-															《活动规则》
-														</a>
-														<span>，如有疑问请联系客服。</span>
-													</label>
-												</span>
-											</li>
-											<li class="form-item">
-												<button type="submit" class="btn btn-caution"><span>保存</span></button>
-											</li>
-										</ul>
-									</form>
-								</div>
-							</div>
+						<!-- 我的账户 -->
+						<div id="my-account">
+							<h2 class="order-text2">我的账户</h2>
+							<ul class="order-menu">
+								<li><a href="c_activity.jsp" id="myactivty">我的活动</a></li>
+								<li><a href="#" id="mycoupon" style="color: #00a8ff;">我的优惠券</a></li>
+								<li><a href="c_bring.jsp" id="bringcoupon">领券中心</a></li>
+								<li><a href="c_love.jsp" id="mylove">我的收藏/到货通知</a></li>
+							</ul>
+						</div>
+						<!-- 个人信息管理 -->
+						<div id="message-manager">
+							<h2 class="order-text3">个人信息管理</h2>
+							<ul class="order-menu">
+								<li><a href="../manager/c_massage.jsp" id="message">个人信息</a></li>
+								<li><a href="../manager/c_safe.jsp" id="safecenter">安全中心</a></li>
+								<li><a href="../manager/c_adderss.jsp" id="adderss">收货地址</a></li>
+							</ul>
 						</div>
 					</div>
-					
+				</div>
+				<!-- 右边 -->
+				<div id="center-right">
+					<!-- 我的优惠券 -->
+					<div id="c_coupon">
+						<div class="coupon_title">
+							<h2>我的优惠券</h2>
+						</div>
+						<div class="coupon_tags">
+							<a href="c_coupon.jsp" id="yuse">可使用</a>
+							<span>|</span>
+							<a href="used.jsp" id="used">已使用</a>
+							<span>|</span>
+							<a href="#" id="pass" style="color: aqua;">已过期</a>
+						</div>
+						<div class="coupon_menber">
+							
+						</div>
+					</div>
+					<div id="jilu">
+						<p>
+							总计
+							<span style="color:#e4393c;">0</span> <!-- !!!传参 -->
+							个记录
+						</p>
+					</div>
 				</div>
 			</div>
+			
 		</div>
-	<!-- 页尾 -->
-	<div id="footer" class="footer">
+	</div>
+</div>
+<!-- 页尾 -->
+		<div id="footer" class="footer">
 			<div id="footer-service">
 				<div id="service">
 					<div class="page">
@@ -411,18 +358,23 @@
 						&nbsp; │ ASUSTeK Computer Inc. All Rights Reserved.
 					</p>
 					<div style="margin:0 auto; padding:20px 0;text-align: center;">
-						<p class="footer_txt">
-							<a href="">ASUS使用条款</a>
-							<a href="">隐私政策</a>
-							<a href="">隐私说明</a>
-							<img src="//static.asus.com.cn/static/store/images/735f16509d9a54d5ddade073f133e7dcf2c0a486.png?1499224546#h">
-							<a href="">沪公网安备 31011202002313号</a>
-						</p>
-						
+							<p class="footer_txt">
+								<a href="">ASUS使用条款</a>
+								<a href="">隐私政策</a>
+								<a href="">隐私说明</a>
+								<img src="//static.asus.com.cn/static/store/images/735f16509d9a54d5ddade073f133e7dcf2c0a486.png?1499224546#h">
+								<a href="">沪公网安备 31011202002313号</a>
+							</p>
+							
+						</div>
 					</div>
 				</div>
+				
 			</div>
-			
-		</div>
 </body>
+<script src="../../js/jquery-3.5.1.min.js"></script>
+<script src="../../js/PeopleCenter.js"></script>
+<script>
+
+</script>
 </html>

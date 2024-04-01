@@ -20,9 +20,15 @@
 		li{
 			list-style: none;
 		}
-		
+		table{
+			border-collapse: collapse;
+		}
+		i{
+			font-style: normal;
+		}
 	</style>
 	<body>
+		<!-- 导航栏 -->
 		<div class="header">
 			<div class="topBar clearfix">
 				<div class="containerWidth">
@@ -112,7 +118,7 @@
 					<!-- 当前选择位置 -->
 					<span><a href="../PeopleCenter.jsp" id="a-title">个人中心</a></span>
 					<span>></span>
-					<span class="now">收货地址</span><!-- !!!通过点击获取 -->
+					<span class="now">我的订单</span><!-- !!!通过点击获取 -->
 				</div>
 				<!-- 内容 -->
 				<div id="c-center">
@@ -124,9 +130,9 @@
 								<div id="order-manager">
 									<h2 class="order-text1">订单管理</h2>
 									<ul class="order-menu">
-										<li><a href="../order/c_order.jsp" id="myorder">我的订单</a></li>
-										<li><a href="../order/c_salce.jsp" id="salce_mannager">售后管理</a></li>
-										<li><a href="../order/c_comment.jsp" id="comment_mannager">评价管理</a></li>
+										<li><a href="#" id="myorder" style="color: #00a8ff;">我的订单</a></li>
+										<li><a href="c_salce.jsp" id="salce_mannager">售后管理</a></li>
+										<li><a href="c_comment.jsp" id="comment_mannager">评价管理</a></li>
 									</ul>
 								</div>
 								<!-- 我的账户 -->
@@ -143,115 +149,68 @@
 								<div id="message-manager">
 									<h2 class="order-text3">个人信息管理</h2>
 									<ul class="order-menu">
-										<li><a href="c_massage.jsp" id="message">个人信息</a></li>
-										<li><a href="c_safe.jsp" id="safecenter">安全中心</a></li>
-										<li><a href="#" id="adderss" style="color: #00a8ff;">收货地址</a></li>
+										<li><a href="../manager/c_massage.jsp" id="message">个人信息</a></li>
+										<li><a href="../manager/c_safe.jsp" id="safecenter">安全中心</a></li>
+										<li><a href="../manager/c_adderss.jsp" id="adderss">收货地址</a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 						<!-- 右边 -->
 						<div id="center-right">
-							<!-- 收货地址 -->
-							<div id="c_adderss">
-								<div class="adderss_title">
-									<h4>
-										新增收货地址
-										<b>
-											(已有
-											<i class="warn">0</i>
-											个收货地址最多添加10个收货地址)
-										</b>
-									</h4>
+							<!-- 我的订单 -->
+							<div id="c_order">
+								<div id="order_title">
+									<h2>我的订单</h2>
 								</div>
-								<b>
-									<div class="member-address-submit">
-										<form action="" method="post" class="write_address">
-											<ul>
-												<li class="form-item">
-													<div class="address_name">
-														<label class="label_name">
-															收货人姓名
-															<em class="text-warn">*</em>
-														</label>
-														<span class="form-act">
-															<input type="text" name="address_name" id="input_name" placeholder="请输入用户名" >
-														</span>
-													</div>
-												</li>
-												<li class="form-item">
-													<div class="address_name">
-														<label class="label_name">
-															收货地区
-															<em class="text-warn">*</em>
-														</label>
-														<span class="form-act la">
-															<select id="sheng">
-															    <option value="请选择">请选择</option>
-															</select>
-															<select id="city" style="display: none;">
-															    
-															</select>
-															<select id="qu" style="display: none;">
-															    
-															</select>
-														</span>
-													</div>
-												</li>
-												<li class="form-item">
-													<div class="address_name">
-														<label class="label_name">
-															详细地址
-															<em class="text-warn">*</em>
-														</label>
-														<span class="form-act">
-															<input type="text" name="address" id="address" placeholder="请输入详细地址" style="width: 800px;">
-														</span>
-													</div>
-												</li>
-												<li class="form-item">
-													<label class="label_name">
-														收货人手机
-														<em class="text-warn">*</em>
-													</label>
-													<span class="form-act">
-														<input type="text" name="phone" id="phone" placeholder="请输入11位手机号" style="width: 340px;">
-													</span>
-												</li>
-												<li class="form-item">
-													<span class="form-act form-btn" id="btn_group">
-														<button type="submit" class="btn btn-caution" id="address_submit"><span>确定</span></button>
-													</span>
-													<span class="form-act" id="default">
-														<label class="setting-default checkbox_box_label">设为默认</label>
-														<div class="default_box">
-															<input type="checkbox" id="check">
-														</div>
-														
-													</span>
-												</li>
-											</ul>
-										</form>
-									</div>
-									<div class="member-address-tit bottom">
-										<h4>已有地址</h4>
-									</div>
-									<div class="member-address-list" style="position:relative;">
-										<table class="member-grid">
+								<div id="order_tags">
+									<a href="#" style="color: aqua;">全部订单</a>
+									<span>|</span>
+									<a href="daizhifu.jsp">待支付</a>
+									<span>|</span>
+									<a href="daishouhuo.jsp" >待收货</a>
+									<span>|</span>
+									<a href="daifahuo.jsp">代发货</a>
+									<span>|</span>
+									<a href="yushou.jsp">预售</a>
+								</div>
+								<div id="order_menber">
+									<table class="order_table">
+										<thead>
 											<tr>
-												<th>收货人</th>
-												<th>收货人地址</th>
-												<th>联系电话</th>
-												<th>操作</th>
+												<th style="width: 565px;">订单明细</th>
+												<th style="width: 115px;">订单金额</th>
+												<th style="width: 115px;">订单状态</th>
+												<th style="width: 115px;">操作</th>
 											</tr>
-											<!-- !!!传参 -->
-											<tbody class="first">
-												
-											</tbody>
+										</thead>
+									</table>
+									<div id="info_table">
+										<!-- !!!添加循环 -->
+										<table style="width: 100%;" class="info_body">
+									<!-- 		<tr>
+												<th colspan="4">
+													<span>
+														订单时间:
+														<i>2024-3-20 14:48:32</i>
+													</span>
+													<span>
+														订单号:
+														<i>12312335632</i>
+													</span>
+												</th>   !!!通过查询 
+											</tr> -->
 										</table>
 									</div>
-								</b>
+								</div>
 							</div>
+						</div>
+						<div id="jilu">
+							<p>
+								总计
+								<span style="color:#e4393c;">0</span> <!-- !!!传参 -->
+								个记录
+							</p>
 						</div>
 					</div>
 					
@@ -259,6 +218,36 @@
 			</div>
 		</div>
 		<!-- 页尾 -->
+		<div id="footer" class="footer">
+			<div id="footer-service">
+				<div id="service">
+					<div class="page">
+						<ul class="clearfix">
+							<li class="zhiy">
+								<img src="../../imgs/guanfzhiying.png">
+								官方直营
+							</li>
+							<li class="yiwai">
+								<img src="../../imgs/yiwai.png">
+								笔记本意外险
+							</li>
+							<li class="baoyou">
+								<img src="../../imgs/baoyou.png">
+								全场包邮
+							</li>
+							<li class="wuyou">
+								<img src="../../imgs/wuyou.png">
+								7天无忧退
+							</li>
+							<li class="huabei">
+								<img src="../../imgs/huabei.png">
+								支付宝花呗分期
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
 			<div id="footer-helper">
 				<div id="helper">
 					<div class="page clearfix">
@@ -420,83 +409,7 @@
 	</body>
 	<script src="../../js/jquery-3.5.1.min.js"></script>
 	<script src="../../js/PeopleCenter.js"></script>
-	<script src="../../js/city.js"></script>
 	<script>
-		$(function(){
-		    var name;
-		    var province;
-		    var cityData = window.a; // 获取全局变量a的值
-		    
-		    for(var a in cityData){
-		        var cl = "s"+a;
-		        var sheng = cityData[a].name;
-		        
-		        $("<option>").addClass(cl).appendTo("#sheng").html(sheng);
-		    }
-		    
-		    $("#sheng").change(function(){
-		        name = $(this).val();
-		        if(name === '请选择') {
-		            $("#city option").remove();
-		            // 隐藏第二级城市选项
-		            $("#city").hide();
-		            // 清空区级选项并隐藏
-		            $("#qu option").remove();
-		            $("#qu").hide();
-		            return;
-		        }
-		        for(var a in cityData){
-		            if(name ==  cityData[a].name){
-		                province = a;
-		            }
-		        }
-		        var cities = cityData[province].child;
-		        $("#city option").remove();
-		        var selectedProvince = $("#sheng option:selected").text();
-		        $("<option>").appendTo("#city").html("请选择");
-		        for(var b in cities){
-		            $("<option>").appendTo("#city").html(cities[b].name);
-		        }
-		        
-		        // 显示第二级城市选项
-		        $("#city").show();
-		        // 清空区级选项并隐藏
-		        $("#qu option").remove();
-		        $("#qu").hide();
-		    });
 		
-		    $("#city").change(function(){
-		        var name = $(this).val();
-		        if(name === '请选择') {
-		            // 清空区级选项并隐藏
-		            $("#qu option").remove();
-		            $("#qu").hide();
-		            return;
-		        }
-		        var cities = cityData[province].child;
-		        for(var b in cities){
-		            if(name == cities[b].name){
-		                var quData = cities[b].child;
-		                $("#qu option").remove();
-		                $("<option>").appendTo("#qu").html("请选择");
-		                for(var c in quData){
-		                    $("<option>").appendTo("#qu").html(quData[c]);
-		                }
-		                // 显示区级选项
-		                $("#qu").show();
-		            }
-		        }
-		    });
-		
-		    $("#qu").change(function(){
-		        var selectedProvince = $("#sheng option:selected").text();
-		        var selectedCity = $("#city option:selected").text();
-		        var selectedQu = $(this).val();
-		        console.log("选中的省份：" + selectedProvince);
-		        console.log("选中的城市：" + selectedCity);
-		        console.log("选中的区：" + selectedQu);
-		    });
-		
-		});
 	</script>
 </html>

@@ -20,7 +20,12 @@
 		li{
 			list-style: none;
 		}
-		
+		table{
+			border-collapse: collapse;
+		}
+		i{
+			font-style: normal;
+		}
 	</style>
 	<body>
 		<!-- 导航栏 -->
@@ -113,7 +118,7 @@
 					<!-- 当前选择位置 -->
 					<span><a href="../PeopleCenter.jsp" id="a-title">个人中心</a></span>
 					<span>></span>
-					<span class="now">我的活动</span><!-- !!!通过点击获取 -->
+					<span class="now">我的订单</span><!-- !!!通过点击获取 -->
 				</div>
 				<!-- 内容 -->
 				<div id="c-center">
@@ -125,19 +130,19 @@
 								<div id="order-manager">
 									<h2 class="order-text1">订单管理</h2>
 									<ul class="order-menu">
-										<li><a href="../order/c_order.jsp" id="myorder">我的订单</a></li>
-										<li><a href="../order/c_salce.jsp" id="salce_mannager">售后管理</a></li>
-										<li><a href="../order/c_comment.jsp" id="comment_mannager">评价管理</a></li>
+										<li><a href="#" id="myorder" style="color: #00a8ff;">我的订单</a></li>
+										<li><a href="c_salce.jsp" id="salce_mannager">售后管理</a></li>
+										<li><a href="c_comment.jsp" id="comment_mannager">评价管理</a></li>
 									</ul>
 								</div>
 								<!-- 我的账户 -->
 								<div id="my-account">
 									<h2 class="order-text2">我的账户</h2>
 									<ul class="order-menu">
-										<li><a href="#" id="myactivty" style="color: #00a8ff;">我的活动</a></li>
-										<li><a href="c_coupon.jsp" id="mycoupon">我的优惠券</a></li>
-										<li><a href="c_bring.jsp" id="bringcoupon">领券中心</a></li>
-										<li><a href="c_love.jsp" id="mylove">我的收藏/到货通知</a></li>
+										<li><a href="../count/c_activity.jsp" id="myactivty">我的活动</a></li>
+										<li><a href="../count/c_coupon.jsp" id="mycoupon">我的优惠券</a></li>
+										<li><a href="../count/c_bring.jsp" id="bringcoupon">领券中心</a></li>
+										<li><a href="../count/c_love.jsp" id="mylove">我的收藏/到货通知</a></li>
 									</ul>
 								</div>
 								<!-- 个人信息管理 -->
@@ -153,24 +158,59 @@
 						</div>
 						<!-- 右边 -->
 						<div id="center-right">
-							<!-- 我的活动 -->
-							<div id="c_activity">
-								<div id="activity_box">
-									<div id="box_top">
-										<p>我的活动</p>
-										<p class="box_txt">我的预约</p>
-										<p class="box_txt1">什么是我的预约</p>
-										<p class="box_txt2">商品预约后，在“我的预约”栏目下，您可以查看您所预约的商品，待商品开始抢购时，可以通过“立即抢购”按钮立即结算抢购 商品，我们会按付款顺序优先给您发货</p>
-									</div>
-									<div id="jilu">
-										<p>
-											总计
-											<span style="color:#e4393c;">0</span> <!-- !!!传参 -->
-											个记录
-										</p>
+							<!-- 我的订单 -->
+							<div id="c_order">
+								<div id="order_title">
+									<h2>我的订单</h2>
+								</div>
+								<div id="order_tags">
+									<a href="c_order.jsp">全部订单</a>
+									<span>|</span>
+									<a href="daizhifu.jsp">待支付</a>
+									<span>|</span>
+									<a href="daishouhuo.jsp">待收货</a>
+									<span>|</span>
+									<a href="daifahuo.jsp">代发货</a>
+									<span>|</span>
+									<a href="#" style="color: aqua;">预售</a>
+								</div>
+								<div id="order_menber">
+									<table class="order_table">
+										<thead>
+											<tr>
+												<th style="width: 565px;">订单明细</th>
+												<th style="width: 115px;">订单金额</th>
+												<th style="width: 115px;">订单状态</th>
+												<th style="width: 115px;">操作</th>
+											</tr>
+										</thead>
+									</table>
+									<div id="info_table">
+										<!-- !!!添加循环 -->
+										<table style="width: 100%;" class="info_body">
+									<!-- 		<tr>
+												<th colspan="4">
+													<span>
+														订单时间:
+														<i>2024-3-20 14:48:32</i>
+													</span>
+													<span>
+														订单号:
+														<i>12312335632</i>
+													</span>
+												</th>   !!!通过查询 
+											</tr> -->
+										</table>
 									</div>
 								</div>
 							</div>
+						</div>
+						<div id="jilu">
+							<p>
+								总计
+								<span style="color:#e4393c;">0</span> <!-- !!!传参 -->
+								个记录
+							</p>
 						</div>
 					</div>
 					

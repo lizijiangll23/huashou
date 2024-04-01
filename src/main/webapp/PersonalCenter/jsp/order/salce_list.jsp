@@ -113,7 +113,7 @@
 					<!-- 当前选择位置 -->
 					<span><a href="../PeopleCenter.jsp" id="a-title">个人中心</a></span>
 					<span>></span>
-					<span class="now">我的活动</span><!-- !!!通过点击获取 -->
+					<span class="now">售后管理</span><!-- !!!通过点击获取 -->
 				</div>
 				<!-- 内容 -->
 				<div id="c-center">
@@ -125,19 +125,19 @@
 								<div id="order-manager">
 									<h2 class="order-text1">订单管理</h2>
 									<ul class="order-menu">
-										<li><a href="../order/c_order.jsp" id="myorder">我的订单</a></li>
-										<li><a href="../order/c_salce.jsp" id="salce_mannager">售后管理</a></li>
-										<li><a href="../order/c_comment.jsp" id="comment_mannager">评价管理</a></li>
+										<li><a href="c_order.jsp" id="myorder" >我的订单</a></li>
+										<li><a href="#" id="salce_mannager" style="color: #00a8ff;">售后管理</a></li>
+										<li><a href="c_comment.jsp" id="comment_mannager">评价管理</a></li>
 									</ul>
 								</div>
 								<!-- 我的账户 -->
 								<div id="my-account">
 									<h2 class="order-text2">我的账户</h2>
 									<ul class="order-menu">
-										<li><a href="#" id="myactivty" style="color: #00a8ff;">我的活动</a></li>
-										<li><a href="c_coupon.jsp" id="mycoupon">我的优惠券</a></li>
-										<li><a href="c_bring.jsp" id="bringcoupon">领券中心</a></li>
-										<li><a href="c_love.jsp" id="mylove">我的收藏/到货通知</a></li>
+										<li><a href="../count/c_activity.jsp" id="myactivty">我的活动</a></li>
+										<li><a href="../count/c_coupon.jsp" id="mycoupon">我的优惠券</a></li>
+										<li><a href="../count/c_bring.jsp" id="bringcoupon">领券中心</a></li>
+										<li><a href="../count/c_love.jsp" id="mylove">我的收藏/到货通知</a></li>
 									</ul>
 								</div>
 								<!-- 个人信息管理 -->
@@ -153,24 +153,43 @@
 						</div>
 						<!-- 右边 -->
 						<div id="center-right">
-							<!-- 我的活动 -->
-							<div id="c_activity">
-								<div id="activity_box">
-									<div id="box_top">
-										<p>我的活动</p>
-										<p class="box_txt">我的预约</p>
-										<p class="box_txt1">什么是我的预约</p>
-										<p class="box_txt2">商品预约后，在“我的预约”栏目下，您可以查看您所预约的商品，待商品开始抢购时，可以通过“立即抢购”按钮立即结算抢购 商品，我们会按付款顺序优先给您发货</p>
+							<!-- 售后管理 -->
+							<div id="c_salce">
+								<div id="salce_box">
+									<div id="salce_tag">
+										<a href="c_salce.jsp" id="please_salce">申请售后</a>
+										<span>|</span>
+										<a href="#" id="salce_list"  style="color: aqua;">售后记录</a>
 									</div>
-									<div id="jilu">
-										<p>
-											总计
-											<span style="color:#e4393c;">0</span> <!-- !!!传参 -->
-											个记录
-										</p>
+									<div id="salce_menber">
+										<table class="salce_table" style="width: 98%;">
+											<thead>
+												<tr>
+													<th style="width: 500px;">订单明细</th>
+													<th>订单金额</th>
+													<th>操作</th>
+												</tr>
+												<tr>
+													<td colspan="3" style="height: 20px;"></td>
+												</tr>
+											</thead>
+											<!-- !!!查询记录 -->
+											<tbody>
+												<tr class="one">
+													<td colspan="5">暂无售后服务</td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
 								</div>
 							</div>
+						</div>
+						<div id="jilu">
+							<p>
+								总计
+								<span style="color:#e4393c;">0</span> <!-- !!!传参 -->
+								个记录
+							</p>
 						</div>
 					</div>
 					
