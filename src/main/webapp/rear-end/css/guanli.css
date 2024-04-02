@@ -1,0 +1,66 @@
+@charset "UTF-8";
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#lan{
+	width: 85%;
+	background-color: #f1f3f5;
+	float: left;
+}
+#tian{
+	width: 98%;
+	height: 120px;
+	background-color: white;
+	margin: 14px auto;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #888888;
+}
+#tian_1{
+	width: 705px;
+	height: 100%;
+	margin: 0px auto;
+}
+.qi{
+	width: 156px;
+	height: 100%;
+	background-color: white;
+	float: left;
+	margin: 0px 10px;
+}
+#shu{
+	width: 65%;
+	height: 500px;
+	background-color: white;
+	float: left;
+	margin-left: 14px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #888888;
+}
+#an button{
+	margin: 10px 10px;
+	padding: 5px 8px;
+	background-color: white;
+	border: 1px solid black;
+}
+
+#yuan table {
+    width: 100%; /* 让表格宽度铺满父元素 */
+    border-collapse: collapse; /* 让表格边框合并 */
+    border: 1px solid black; /* 设置表格边框为1px实线黑色 */
+}
+
+#yuan th, #yuan td {
+    border: 1px solid black; /* 设置单元格边框为1px实线黑色 */
+    padding: 8px; /* 添加单元格内边距 */
+    text-align: center; /* 居中显示文本 */
+}
+#xian{
+	width: 32%;
+	height: 500px;
+	background-color: white;
+	float: right;
+	margin-right: 14px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #888888;
+}
